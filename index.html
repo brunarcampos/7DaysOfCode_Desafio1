@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>OptimusTech</title>
+    <style>
+
+        :root{
+            --cor-primaria: #3A404E;
+            --fonte-inter: "Inter";
+            --cor-secundaria: #667085;
+            --cor-botao: #8E2424;
+            --cor-terciaria: #FFFFFF;
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .cabecalho-geral {
+            width: 100%;
+            max-width: 1280px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .cabecalho-geral-menus {
+            display: flex;
+            
+        }
+
+        .caixa-logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imagem {
+            height: 27px;
+            width: 27px;
+
+        }
+
+        .container{
+            font-size: 18px;
+            height: 24px;
+            color: var(--cor-primaria);
+            font-family: var(--fonte-inter);
+            font-weight: 500;
+            margin:0.5em;
+        }
+         
+        .caixa-menus ul{
+            display: flex;
+            justify-content: space-between;
+            font-size:16px;
+            font-weight:500;
+            height: 24px;
+            font-family: var(--fonte-inter);
+            color: var(--cor-secundaria);
+            text-indent: 3em;
+            list-style-type: none;
+            
+        }
+
+        .caixa-links  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+           
+        }
+
+        .entrar {
+            text-decoration: none;
+            font-family: var(--fonte-inter);
+            height: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--cor-secundaria);
+            margin: 1em;
+            
+        }
+
+        .botao {
+            font-family: var(--fonte-inter);
+            height: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: var(--cor-botao);
+            color: var(--cor-terciaria);
+            border-radius: 8px 8px;
+            padding: 10px 18px 10px 18px;
+            border-color: var(--cor-botao);
+            width: 112px;
+            height: 44px;
+            border: 1px solid var(--cor-botao);
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-geral">
+            <div class="cabecalho-geral-menus">
+                <div class="caixa-logo">
+                    <img class="imagem" src="./imagens/globovermelho.png"/>
+                    <p class="container">OptimusTech</p>
+                </div>
+                <div class="caixa-menus">
+                    <ul>
+                        <li>Home</li>
+                        <li>Produtos</li>
+                        <li>Recursos</li>
+                        <li>Sobre nós</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="caixa-links">
+                <a href="/" class="entrar">Entrar</a>
+                <button class="botao">Cadastrar</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
