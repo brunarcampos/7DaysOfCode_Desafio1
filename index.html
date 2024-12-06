@@ -13,6 +13,7 @@
             --cor-primaria: #3A404E;
             --fonte-inter: "Inter";
             --cor-secundaria: #667085;
+            --cor-preta: #101828;
             --cor-botao: #8E2424;
             --cor-terciaria: #FFFFFF;
         }
@@ -103,6 +104,38 @@
             border: 1px solid var(--cor-botao);
         }
         
+        .segunda-parte{ 
+            display: center;
+            text-align: center;
+            padding-top: 96px;
+            padding-bottom: 96px;
+           
+        }
+        .subtitulo {
+            font-family: var(--fonte-inter);
+            font-weight: 600;
+            font-size: 16px;
+            height: 24px;
+            color: var(--cor-botao);
+        }
+        .pergunta{
+            font-family: var(--fonte-inter);
+            font-size: 48px;
+            font-weight: 600;
+            height: 60px;
+            color: var(--cor-preta);
+        }
+
+        .texto{
+            font-family: var(--fonte-inter);
+            font-size: 20px;
+            font-weight: 400;
+            height: 30px;
+            color: var(--cor-secundaria);
+            padding-top: 12px;
+            
+        }
+
     </style>
 </head>
 <body>
@@ -128,5 +161,14 @@
             </div>
         </div>
     </header>
+    <header>
+        <div class="segunda-parte">
+           <h3 class="subtitulo">Sobre nós</h3>
+           <h2 class="pergunta">Por que somos diferentes?</h2>
+           <p class="texto">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de<br/> 
+            todo o mundo a se concentrarem naquilo que é realmente oara elas.</p>
+        </div>
+    </header>
+
 </body>
 </html>
