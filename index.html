@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>OptimusTech</title>
     <style>
-
-        :root{
+        :root {
             --cor-primaria: #3A404E;
             --fonte-inter: "Inter";
             --cor-secundaria: #667085;
             --cor-preta: #101828;
             --cor-botao: #8E2424;
             --cor-terciaria: #FFFFFF;
+            --cor-vagas: rgba(142, 36, 36, 0.05);
+            --cor-da-borda: 1px solid rgba(234, 236, 240, 1);
         }
 
         .cabecalho {
@@ -34,10 +38,10 @@
 
         .cabecalho-geral-menus {
             display: flex;
-            
+
         }
 
-        .caixa-logo{
+        .caixa-logo {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -49,33 +53,33 @@
 
         }
 
-        .container{
+        .container {
             font-size: 18px;
             height: 24px;
             color: var(--cor-primaria);
             font-family: var(--fonte-inter);
             font-weight: 500;
-            margin:0.5em;
+            margin: 0.5em;
         }
-         
-        .caixa-menus ul{
+
+        .caixa-menus ul {
             display: flex;
             justify-content: space-between;
-            font-size:16px;
-            font-weight:500;
+            font-size: 16px;
+            font-weight: 500;
             height: 24px;
             font-family: var(--fonte-inter);
             color: var(--cor-secundaria);
             text-indent: 3em;
             list-style-type: none;
-            
+
         }
 
-        .caixa-links  {
+        .caixa-links {
             display: flex;
             justify-content: space-between;
-            align-items: center;  
-           
+            align-items: center;
+
         }
 
         .entrar {
@@ -86,7 +90,7 @@
             font-weight: 500;
             color: var(--cor-secundaria);
             margin: 1em;
-            
+
         }
 
         .botao {
@@ -103,14 +107,15 @@
             height: 44px;
             border: 1px solid var(--cor-botao);
         }
-        
-        .segunda-parte{ 
+
+        .segunda-parte {
             display: center;
             text-align: center;
             padding-top: 96px;
             padding-bottom: 96px;
-           
+
         }
+
         .subtitulo {
             font-family: var(--fonte-inter);
             font-weight: 600;
@@ -118,7 +123,8 @@
             height: 24px;
             color: var(--cor-botao);
         }
-        .pergunta{
+
+        .pergunta {
             font-family: var(--fonte-inter);
             font-size: 48px;
             font-weight: 600;
@@ -126,14 +132,14 @@
             color: var(--cor-preta);
         }
 
-        .texto{
+        .texto {
             font-family: var(--fonte-inter);
             font-size: 20px;
             font-weight: 400;
             height: 30px;
             color: var(--cor-secundaria);
             padding-top: 12px;
-            
+
         }
 
         .dados {
@@ -141,13 +147,10 @@
             justify-content: center;
             margin: 30px;
             gap: 20px;
-           
-        }
-        .dado{
-           
+
         }
 
-        .numeros{
+        .numeros {
             font-family: var(--fonte-inter);
             color: var(--cor-botao);
             font-size: 60px;
@@ -155,7 +158,7 @@
             height: 72px;
         }
 
-        .nomes-dados{
+        .nomes-dados {
             font-family: var(--fonte-inter);
             font-weight: 500;
             font-size: 18px;
@@ -163,10 +166,10 @@
             color: var(--cor-preta);
             margin: 0px;
             margin-top: 16px;
-            
+
         }
 
-        .texto-dados{
+        .texto-dados {
             font-family: var(--fonte-inter);
             font-weight: 400;
             font-size: 16px;
@@ -175,16 +178,117 @@
             margin: 0px;
         }
 
+        .quadrante {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        .vagas {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin-top: 144px;
+        }
 
+        .vagas-abertas {
+            font-family: var(--fonte-inter);
+            font-weight: 500;
+            font-size: 14px;
+            height: 28px;
+            color: var(--cor-botao);
+            background-color: var(--cor-vagas);
+            padding: 4px 12px 4px 12px;
+            width: 125px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .vagas-de-emprego {
+            font-family: var(--fonte-inter);
+            font-weight: 600;
+            font-size: 36px;
+            height: 44px;
+            color: var(--cor-preta);
+            letter-spacing: -2%;
+
+        }
+
+        .vagas-descricao {
+            font-family: var(--fonte-inter);
+            font-weight: 400;
+            font-size: 20px;
+            height: 30px;
+            color: var(--cor-secundaria);
+        }
+
+        .imagem-vagas {
+            width: 1216px;
+            height: 400px;
+            top: 298px;
+            left: 112px;
+        }
+
+        .caixa{
+            gap: 32px;
+            width: 768px;
+            height: 358px;
+        }
+
+        .vaga {
+            border: 1px solid var(--cor-secundaria);
+            background: var(--cor-terciaria);
+            margin: 16px;
+            border-radius: 16px;
+            padding: 24px 24px 28px 24px;
+            max-width: 768px;
+            width: 100%;
+        }
+
+        .nome-da-vaga {
+            font-family: var(--fonte-inter);
+            font-weight: 500;
+            font-size: 20px;
+            height: 30px;
+            color: var(--cor-preta);
+              
+        }
+
+        .titulo-vaga {
+            font-family: var(--fonte-inter);
+            font-size: 18px;
+            font-weight: 500;
+            height: 28px;
+            color: var(--cor-preta);
+            gap: 8px;
+            width: 720px;
+            height: 8px;
+        }
+
+        .informacoes {
+            font-family: var(--fonte-inter);
+            font-weight: 500;
+            font-size: 16px;
+            height: 24px;
+            color: #667085;
+            width: 720px;
+            height: 24px;
+            gap: 24px;
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="cabecalho-geral">
             <div class="cabecalho-geral-menus">
                 <div class="caixa-logo">
-                    <img class="imagem" src="./imagens/globovermelho.png"/>
+                    <img class="imagem" src="./imagens/globovermelho.png" />
                     <p class="container">OptimusTech</p>
                 </div>
                 <div class="caixa-menus">
@@ -204,64 +308,121 @@
     </header>
     <header>
         <div class="segunda-parte">
-           <h3 class="subtitulo">Sobre nós</h3>
-           <h2 class="pergunta">Por que somos diferentes?</h2>
-           <p class="texto">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de<br/> 
-            todo o mundo a se concentrarem naquilo que é realmente oara elas.</p>
+            <h3 class="subtitulo">Sobre nós</h3>
+            <h2 class="pergunta">Por que somos diferentes?</h2>
+            <p class="texto">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de<br />
+                todo o mundo a se concentrarem naquilo que é realmente oara elas.</p>
         </div>
     </header>
 
-<header>
-    <div class="dados">
-        <div class="dado">
-            <span class="numeros">
-            400+ 
-            </span>
-            <h4 class="nomes-dados">
-                Projetos concluídos
-            </h4>
-            <p class="texto-dados">
-                Nós ajudamos a construir mais de <br/>400 projetos incríveis.
-            </p>
+    <header>
+        <div class="dados">
+            <div class="dado">
+                <span class="numeros">
+                    400+
+                </span>
+                <h4 class="nomes-dados">
+                    Projetos concluídos
+                </h4>
+                <p class="texto-dados">
+                    Nós ajudamos a construir mais de <br />400 projetos incríveis.
+                </p>
+            </div>
+            <div class="dado">
+                <span class="numeros">
+                    100+
+                </span>
+                <h4 class="nomes-dados">
+                    Colaboradores
+                </h4>
+                <p class="texto-dados">
+                    Temos mais de 100 colaboradores<br /> no nosso time que se preocupam
+                    <br /> com nossos clientes.
+                </p>
+            </div>
+            <div class="dado">
+                <span class="numeros">
+                    20k
+                </span>
+                <h4 class="nomes-dados">
+                    Downloads
+                </h4>
+                <p class="texto-dados">
+                    Nossos projetos que estão <br />disponíveis em lojas já foram
+                    <br /> baixados mais de 20.000 vezes.
+                </p>
+            </div>
+            <div class="dado">
+                <span class="numeros">
+                    500+
+                </span>
+                <h4 class="nomes-dados">
+                    Reviews 5 estrelas
+                </h4>
+                <p class="texto-dados">
+                    Estamos orgulhosos de contar com<br /> mais de 500 reviews 5 estrelas em
+                    <br /> nossos produtos.
+                </p>
+            </div>
         </div>
-        <div class="dado">
-            <span class="numeros">
-                100+
-            </span>
-            <h4 class="nomes-dados">
-                Colaboradores
-            </h4>
-            <p class="texto-dados">
-                Temos mais de 100 colaboradores<br/> no nosso time que se preocupam 
-                <br/> com nossos clientes.
-            </p>
+    </header>
+    <header>
+        <div class="vagas">
+            <div class="vagas-abertas">Vagas abertas!</div>
+            <h2 class="vagas-de-emprego">Estamos procurando por talentos</h2>
+            <p class="vagas-descricao"> Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+            <img class="imagem-vagas" src="/imagens/Image.png">
         </div>
-        <div class="dado">
-            <span class="numeros">
-                20k
-            </span>
-            <h4 class="nomes-dados">
-                Downloads
-            </h4>
-            <p class="texto-dados">
-                Nossos projetos que estão <br/>disponíveis em lojas já foram
-                <br/> baixados mais de 20.000 vezes.
-            </p>
+
+    </header>
+    <header class="quadrante">
+        <div class="caixa">
+        <div class="nome-da-vaga">
+            <h4>Design</h4>
         </div>
-        <div class="dado">
-            <span class="numeros">
-                500+
-            </span>
-            <h4 class="nomes-dados">
-                Reviews 5 estrelas
-            </h4>
-            <p class="texto-dados">
-                Estamos orgulhosos de contar com<br/> mais de 500 reviews 5 estrelas em 
-                <br/> nossos produtos.
-            </p>
+        <div class="vaga">
+            <span class="titulo-vaga">Product Designer</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$7.000</span>
+            </div>
+        </div>
+        <div class="vaga">
+            <span class="titulo-vaga">UX Designer</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$6.000</span>
+            </div>
         </div>
     </div>
-</header>
+    <div class="caixa">
+        <div class="nome-da-vaga">
+            <h4>Desenvolvimento de Software</h4>
+        </div>
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) IOS</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$8.000</span>
+            </div>
+        </div>
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) Font-end</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$7.000</span>
+            </div>
+        </div>
+        <div class="vaga">
+            <span class="titulo-vaga">Desenvolvedor(a) Back-end</span>
+            <div class="informacoes">
+                <span>Full-time</span>
+                <span>Faixa salarial: R$8.000</span>
+            </div>
+        </div>
+    </div>
+    </header>
 
 </body>
+
 </html>
