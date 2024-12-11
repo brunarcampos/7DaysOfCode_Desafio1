@@ -236,7 +236,6 @@
         .caixa{
             gap: 32px;
             width: 768px;
-            height: 358px;
         }
 
         .vaga {
@@ -274,12 +273,65 @@
             font-weight: 500;
             font-size: 16px;
             height: 24px;
-            color: #667085;
+            color: var(--cor-secundaria);
             width: 720px;
             height: 24px;
             gap: 24px;
             margin-top: 20px;
         }
+
+        .comentario {
+            width: 1088px;
+            text-align: center;
+            height: 404px;
+            border-radius: 16px;
+           justify-content: center;
+            background-color: var(--cor-vagas);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .o-que-falaram {
+            font-family: var(--fonte-inter);
+            font-weight: 600;
+            font-size: 14px;
+            height: 20px;
+            color: var(--cor-botao);
+            
+        }
+
+        .comentario-pessoa {
+            font-family: var(--fonte-inter);
+            font-weight: 500;
+            font-size: 36px;
+            height: 44px;
+            letter-spacing: -2%;
+            color: var(--cor-preta);
+        }
+
+        .foto-pessoa {
+            width: 56px;
+            height: 56px;
+            border-radius: 200px;
+        }
+
+        .nome-pessoa {
+            font-family: var(--fonte-inter);
+            font-weight: 500;
+            font-size: 16px;
+            height: 24px;
+            color: var(--cor-preta);
+        }
+
+        .profissao {
+            font-family: var(--fonte-inter);
+            font-weight: 400;
+            font-size: 14px;
+            height: 20px;
+            color: var(--cor-primaria);
+        }
+
     </style>
 </head>
 
@@ -421,6 +473,16 @@
             </div>
         </div>
     </div>
+    </header>
+    <header  class="quadrante">
+        <div class="comentario">
+            <h6 class="o-que-falaram"> Veja o que nossos colaboradores falam sobre nós</h6>
+            <h2 class="cometario-pessoa">OptimusTech se importa com a saúde dos seus colaboradores e 
+                <br/>sempre procura nos dar todo tipo de auxilio possível.</h2>
+            <img class="foto-pessoa" src="/imagens/Avatar.png">
+            <p class="nome-pessoa">Júlia Castro</p>  
+           <span class="profissao" >Desenvolvedora Web</span>  
+        </div>
     </header>
 
 </body>
