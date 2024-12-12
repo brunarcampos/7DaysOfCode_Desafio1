@@ -233,7 +233,7 @@
             left: 112px;
         }
 
-        .caixa{
+        .caixa {
             gap: 32px;
             width: 768px;
         }
@@ -254,7 +254,7 @@
             font-size: 20px;
             height: 30px;
             color: var(--cor-preta);
-              
+
         }
 
         .titulo-vaga {
@@ -285,7 +285,7 @@
             text-align: center;
             height: 404px;
             border-radius: 16px;
-           justify-content: center;
+            justify-content: center;
             background-color: var(--cor-vagas);
             align-items: center;
             display: flex;
@@ -298,7 +298,7 @@
             font-size: 14px;
             height: 20px;
             color: var(--cor-botao);
-            
+
         }
 
         .comentario-pessoa {
@@ -332,6 +332,54 @@
             color: var(--cor-primaria);
         }
 
+        .rodape {
+            width: 1088px;
+            text-align: center;
+            height: 404px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: 96px;
+            
+        }
+
+        .rodape-titulo {
+            font-family: var(--fonte-inter);
+            font-weight: 600;
+            font-size: 36px;
+            height: 44px;
+            letter-spacing: -2%;
+        }
+
+        .rodape-texto {
+            font-family: var(--fonte-inter);
+            font-weight: 400;
+            font-size: 20px;
+            height: 30px;
+            color: var(--cor-secundaria);
+        }
+
+        .rodape-caixa {
+            font-family: var(--fonte-inter);
+            font-weight: 400;
+            font-size: 16px;
+            height: 24px;
+            border-radius: 8px;
+            padding: 12px 14px 12px 16px;
+            gap: 8px;
+            color: var(--cor-secundaria);
+            border: 1px solid var(--cor-primaria);
+        }
+
+        .rodape-final {
+            font-family: var(--fonte-inter);
+            font-weight: 400;
+            font-size: 16px;
+            height: 24px;
+            color: var(--cor-secundaria);
+            margin-top: 16px;
+        }
     </style>
 </head>
 
@@ -429,59 +477,72 @@
     </header>
     <header class="quadrante">
         <div class="caixa">
-        <div class="nome-da-vaga">
-            <h4>Design</h4>
-        </div>
-        <div class="vaga">
-            <span class="titulo-vaga">Product Designer</span>
-            <div class="informacoes">
-                <span>Full-time</span>
-                <span>Faixa salarial: R$7.000</span>
+            <div class="nome-da-vaga">
+                <h4>Design</h4>
+            </div>
+            <div class="vaga">
+                <span class="titulo-vaga">Product Designer</span>
+                <div class="informacoes">
+                    <span>Full-time</span><br>
+                    <span>Faixa salarial: R$7.000</span>
+                </div>
+            </div>
+            <div class="vaga">
+                <span class="titulo-vaga">UX Designer</span>
+                <div class="informacoes">
+                    <span>Full-time</span><br>
+                    <span>Faixa salarial: R$6.000</span>
+                </div>
             </div>
         </div>
-        <div class="vaga">
-            <span class="titulo-vaga">UX Designer</span>
-            <div class="informacoes">
-                <span>Full-time</span>
-                <span>Faixa salarial: R$6.000</span>
+        <div class="caixa">
+            <div class="nome-da-vaga">
+                <h4>Desenvolvimento de Software</h4>
+            </div>
+            <div class="vaga">
+                <span class="titulo-vaga">Desenvolvedor(a) IOS</span>
+                <div class="informacoes">
+                    <span>Full-time</span><br>
+                    <span>Faixa salarial: R$8.000</span>
+                </div>
+            </div>
+            <div class="vaga">
+                <span class="titulo-vaga">Desenvolvedor(a) Font-end</span>
+                <div class="informacoes">
+                    <span>Full-time</span><br>
+                    <span>Faixa salarial: R$7.000</span>
+                </div>
+            </div>
+            <div class="vaga">
+                <span class="titulo-vaga">Desenvolvedor(a) Back-end</span>
+                <div class="informacoes">
+                    <span>Full-time</span><br>
+                    <span>Faixa salarial: R$8.000</span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="caixa">
-        <div class="nome-da-vaga">
-            <h4>Desenvolvimento de Software</h4>
-        </div>
-        <div class="vaga">
-            <span class="titulo-vaga">Desenvolvedor(a) IOS</span>
-            <div class="informacoes">
-                <span>Full-time</span>
-                <span>Faixa salarial: R$8.000</span>
-            </div>
-        </div>
-        <div class="vaga">
-            <span class="titulo-vaga">Desenvolvedor(a) Font-end</span>
-            <div class="informacoes">
-                <span>Full-time</span>
-                <span>Faixa salarial: R$7.000</span>
-            </div>
-        </div>
-        <div class="vaga">
-            <span class="titulo-vaga">Desenvolvedor(a) Back-end</span>
-            <div class="informacoes">
-                <span>Full-time</span>
-                <span>Faixa salarial: R$8.000</span>
-            </div>
-        </div>
-    </div>
     </header>
-    <header  class="quadrante">
+    <header class="quadrante">
         <div class="comentario">
             <h6 class="o-que-falaram"> Veja o que nossos colaboradores falam sobre nós</h6>
-            <h2 class="cometario-pessoa">OptimusTech se importa com a saúde dos seus colaboradores e 
-                <br/>sempre procura nos dar todo tipo de auxilio possível.</h2>
+            <h2 class="cometario-pessoa">OptimusTech se importa com a saúde dos seus colaboradores e
+                <br />sempre procura nos dar todo tipo de auxilio possível.
+            </h2>
             <img class="foto-pessoa" src="/imagens/Avatar.png">
-            <p class="nome-pessoa">Júlia Castro</p>  
-           <span class="profissao" >Desenvolvedora Web</span>  
+            <p class="nome-pessoa">Júlia Castro</p>
+            <span class="profissao">Desenvolvedora Web</span>
+        </div>
+    </header>
+
+    <header>
+        <div class="rodape">
+            <h3 class="rodape-titulo">Acompanhe as nossas oportunidades</h3>
+            <p class="rodape-texto">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+            <div class="email">
+                <input class="rodape-caixa" placeholder="Seu email" />
+                <button class="botao">Cadastrar</button>
+            </div>
+            <span class="rodape-final">© 2022 OptimusTech. Todos os direitos reservados.</span>
         </div>
     </header>
 
